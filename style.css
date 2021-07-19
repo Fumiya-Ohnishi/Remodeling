@@ -487,6 +487,8 @@ template {
 [hidden] {
   display: none;
 }
+
+
 body {
   min-width: 1080px;
   height: auto;
@@ -499,6 +501,8 @@ header {
   justify-content: space-between;
   align-items: center;
   background: #040f5f;
+  position: fixed;
+  z-index: 99;
 }
 .left_header {
   width: 20%;
@@ -686,24 +690,254 @@ header {
     height: auto;
     text-align: center;
     padding-top: 5%;
+    
 }
 .sub_img img{
     width: 70%;
     height: auto;
+    box-shadow: 0 20px px #666666;
 }
 .about_wrapper{
-    width: 80%;
+    width: 70%;
     height: auto;
     margin: 0 auto;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 5%;
 }
 .sub_title{
     text-align: center;
-    font-family: kan415typos-std, sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 70px;
+    color: #040F5F;
+    padding: 5% 0;
 }
 .about_img{
-    
-    display: flex;
+  text-align: center;
+}
+.about_img img{ 
+    width: 70%;
+    height: auto;
+}
+hr{
+  margin: 0 auto;
+}
+.work_wrapper{
+  width: 80%;
+  height: 600px;
+  margin: 0 auto;
+  background-image: url(img/2605649.jpg);
+  position: relative;
+}
+.bg-mask {
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.5);
+  /* position: relative; */
+}
+.work_wrapper img{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+.work_img_wrapper{
+  width: 45%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  margin: 5% 0;
+}
+.work_img_wrapper img{
+  width: 40%;
+}
+.submit{
+  position: absolute;
+  bottom: 25%;
+  right: 25%;
+}
+
+.photo_wrapper{
+  width: 100%;
+  height: auto;
+  padding: 10% 0;
+  display: flex;
+}
+.left_img,
+.right_img{
+  width: 50%;
+  height: auto;
+}
+.left_img img,
+.right_img img{
+  width: 720px;
+  height: 400px;
+}
+.staff_wrapper{
+  width: 60%;
+  height: auto;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 10%;
+}
+.staff_wrapper img{
+  width: 50%;
+  height: auto;
+}
+
+
+footer{
+  width: 100%;
+  height: auto;
+  padding-top: 10%;
+}
+.footer_wrapper{
+  width: 70%;
+  height: auto;
+  background: #040F5F;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  color: #fff;
+}
+.left_footer{
+  width: 33.3%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.footer_logo{
+  width: 50px;
+  height: auto;
+  padding-bottom: 2%;
+  padding-top: 50%;
+  padding-left: 2%;
+}
+.footer_img{
+  width:200px;
+  height: auto;
+  padding-left: 20%;
+  /* padding-top: 50%;
+   */
+}
+
+.center_footer{
+  width: 33.3%;
+  height: auto;
+}
+.line {
+  margin: 0 1rem;
+  width: 4px;
+  background-color: #fff;
+}
+.center_title{
+  padding-top: 5%;
+  font-size: 30px;
+}
+
+.center_footer ul li{
+  list-style-type: none;
+  text-align: left;
+  line-height: 200%;
+  font-size: 20px;
+}
+.right_footer{
+  width: 33.3%;
+  height: auto;
+}
+.right_title,
+.right_sub_title,
+.center_title{
+}
+.right_title,.center_title{
+  font-size: 50px;
+  text-decoration: none;
+}
+.right_sub_title{
+  font-size: 30px;
+  text-align: left;
+  padding-left: 5%;
+}
+.right_sub_menu{
+  display: flex;
+  flex-direction: column;
+}
+.right_sub_menu a{
+  width: 100px;
+  height: auto;
+  padding: 2% 0;
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 20px;
+}
+.btn2{
+  width: 100%;
+  height: auto;
+  padding: 2%;
+}
+.btnarrow5{
+  position: relative;
+  border: 1px solid #fff;
+  padding: 8px 30px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  transition: all .2s linear;
+}
+.btnarrow5:hover{
+  background: #fff;
+  color: #000;
+}
+.btnarrow5::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -26px;
+  width: 40px;
+  height: 1px;
+  background: #fff;
+  transition: all .2s linear;
+}
+.btnarrow5::after{
+  content: "";
+  position: absolute;
+  top: 20%;
+  right: -21px;
+  width: 1px;
+  height: 12px;
+  background: #fff;
+  transform: skewX(45deg);
+  transition: all .2s linear;
+}
+.btnarrow5:hover::before{
+  right: -30px;
+}
+.btnarrow5:hover::after{
+  right:-25px;
+}
+.right_sub_menu a {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  text-decoration: none;
+}
+
+.right_sub_menu a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  transform: translate(-100%, 0);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+  content: "";
+}
+
+.right_sub_menu a:hover:after {
+  transform: translate(0, 0);
 }
