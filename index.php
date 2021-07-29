@@ -10,8 +10,8 @@
             美しく快適な空間をお客様に
         </div>
 
-        <div class="sub_img">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/4969203_s.png" />
+        <div class="sub_img ">
+            <img class="fadeInTrigger" src="<?php echo get_template_directory_uri(); ?>/img/4969203_s.png" />
         </div>
         <div class="sub_title">
             About

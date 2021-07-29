@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); echo '?' . filemtime( get_stylesheet_directory() . '/style.css'); ?>" type="text/css" />
+
     <script>
         (function(d) {
             var config = {
@@ -38,6 +40,7 @@
     </script>
     <title>空間X</title>
     <?php wp_head(); ?>
+
 </head>
 
 <body>
@@ -56,7 +59,7 @@
                 <li><a href="#"><span>About</span></a></li>
                 <li><a href="#"><span>Work</span></a></li>
                 <li><a href="#"><span>Staff</span></a></li>
-                <a href="<?php echo home_url('/contact'); ?>" class="btn borderbottom"><span>Constant</span></a>
+                <a href="<?php echo home_url('/contact-form'); ?>" class="btn3 borderbottom"><span>Constant</span></a>
             </ul>
         </div>
     </header>

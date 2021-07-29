@@ -47,13 +47,14 @@
                     </a>
                 </div>
                 <div class="btn2">
-                    <a href="" class="btnarrow5">お問い合わせはこちら</a>
+                    <a href="<?php echo home_url('/contact-form'); ?>" class="btnarrow5">お問い合わせはこちら</a>
                 </div>
             </div>
         </div>
 
     </footer>
-
+    
+    <script src="<?php echo get_template_directory_uri() ?>/style.js" type="text/javaScript" charset="utf-8"></script>
 <?php wp_footer(); ?>
 </body>
 
